@@ -1,0 +1,51 @@
+<html lang="en-Us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Icon Bar - Horizontal
+    </title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+
+        }
+
+        .icon-bar a {
+            float: left; /* float links side by side */
+            text-align: center;
+            width: 20%;
+            padding: 12px 0;
+            color: white;
+            font-size: 36px;
+            transition: all 0.3s ease;
+        }
+
+        .active{
+            background-color: #04aa6d;
+        }
+
+        .icon-bar a:hover{
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="icon-bar">
+        <a class="active" href="#"> <i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"> <i class="fa fa-envelope"></i></a>
+        <a href="#"> <i class="fa fa-globe"></i></a>
+        <a href="#"> <i class="fa fa-trash"></i></a>
+    </div>
+</body>
+
+</html>
