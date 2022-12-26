@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Login Form
+    </title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        form{
+            width:70%;
+        }
+
+        .imgcontainer{
+            text-align:center;
+            position: relative;
+        }
+
+        .avatar{
+            width:40%;
+            border-radius:50%
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Modal Login Form</h2>
+    <div id="id01" class="modal">
+        <form>
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"> &times;
+                    
+                </span>
+                <img src="avatar.png" alt="form image" class="avatar" />
+            </div>
+
+            <div class="container">
+                <label for="uname"><b> User Name </b></label>
+                <input type="text" name="uname"  required placeholder="Enter Username">
+
+                <label for="psw"><b> Password </b></label>
+                <input type="text" name="psw" placeholder="Enter Password">
+
+                <button type="submit"> Login </button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember Me </label>
+                </label>
+            </div>
+
+            <div class="container">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"> Forgot <a href="#"> Password?</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
