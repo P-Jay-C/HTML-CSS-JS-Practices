@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Navbar with Icons
+    </title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       .navbar{
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+       }
+
+       .navbar a{
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+       }
+
+       .navbar a:hover{
+        background-color: #000;
+       }
+
+       .active{
+        background-color: #04aa6d;
+       }
+
+
+       @media screen and (max-width:500px) {
+        .navbar a{
+            float: none;
+            display: block;
+        }
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a class="active" href="#home">
+            <i class="fa fa-fw fa-home"> Home</i>
+        </a>
+        <a href="#search">
+            <i class="fa fa-fw fa-search"> Search</i>
+        </a>
+        <a href="#contact">
+            <i class="fa fa-fw fa-envelope"> Contact</i>
+        </a>
+        <a href="#login">
+            <i class="fa fa-fw fa-user"> Login</i>
+        </a>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
